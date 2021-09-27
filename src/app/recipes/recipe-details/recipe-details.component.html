@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img [src]="Recipe.imgPath" alt="{{Recipe.name}}"  class="img-responsive">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{Recipe.name}}</h1>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+       <div class="btn-group">
+           <button
+           type="button"
+           class="btn btn-primary dropdown-toggle"
+           id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+            Manage recipe<span  class="caret"></span>
+            </button>
+        <ul class="dropdown-menu " appDropdown aria-labelledby="dropdownMenuLink" >
+            <li><a href="" class="dropdown-item">Add ingredients to the shopping list</a></li>
+            <li><a href="" class="dropdown-item">Edit Recipe</a></li>
+            <li><a href="" class="dropdown-item">Delete recipe</a></li>
+        </ul>
+       </div>
+       <!--<div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown link
+        </a>
+      
+        <ul class="dropdown-menu open" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>-->
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        {{Recipe.description}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        Ingredients
+    </div>
+</div>
